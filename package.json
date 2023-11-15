@@ -1,0 +1,35 @@
+{
+  "name": "strapi-4",
+  "private": true,
+  "version": "0.1.2",
+  "description": "A Strapi application",
+  "scripts": {
+    "dev": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "@_sh/strapi-plugin-ckeditor": "2.0.4",
+    "@ckeditor/strapi-plugin-ckeditor": "0.0.7",
+    "@strapi-community/strapi-provider-upload-google-cloud-storage": "4.10.5",
+    "@strapi/plugin-i18n": "4.11.5",
+    "@strapi/plugin-users-permissions": "4.11.5",
+    "@strapi/strapi": "4.11.5",
+    "pg": "8.11.1"
+  },
+  "devDependencies": {
+    "sqlite3": "5.1.6"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "dcb8ceec-d53e-404d-8808-6f907ed0c958"
+  },
+  "engines": {
+    "node": ">=12.x.x <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

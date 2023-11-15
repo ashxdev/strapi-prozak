@@ -1,0 +1,71 @@
+{
+  "kind": "collectionType",
+  "collectionName": "posts",
+  "info": {
+    "singularName": "post",
+    "pluralName": "posts",
+    "displayName": "Post",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": false
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "short_description": {
+      "type": "text"
+    },
+    "category": {
+      "type": "relation",
+      "required": true,
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "main",
+        "hot",
+        "trend",
+        "video",
+        "music"
+      ]
+    },
+    "publish_date": {
+      "type": "datetime",
+      "required": false,
+      "unique": false
+    },
+    "ukr_net": {
+      "type": "boolean",
+      "default": false
+    },
+    "description": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbarBaloon"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    }
+  }
+}
