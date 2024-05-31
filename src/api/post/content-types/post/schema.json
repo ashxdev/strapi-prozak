@@ -37,9 +37,9 @@
     },
     "category": {
       "type": "relation",
-      "required": true,
       "relation": "oneToOne",
-      "target": "api::category.category"
+      "target": "api::category.category",
+      "required": true
     },
     "type": {
       "type": "enumeration",
@@ -63,7 +63,7 @@
     "description": {
       "type": "customField",
       "options": {
-        "preset": "toolbarBaloon"
+        "preset": "toolbarBalloon"
       },
       "customField": "plugin::ckeditor5.CKEditor"
     }
