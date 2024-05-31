@@ -21,7 +21,7 @@
     "html": {
       "type": "customField",
       "options": {
-        "preset": "toolbarBaloon"
+        "preset": "toolbarBalloon"
       },
       "customField": "plugin::ckeditor5.CKEditor"
     }
