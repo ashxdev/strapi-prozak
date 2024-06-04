@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "legacy_posts",
+  "info": {
+    "singularName": "legacy-post",
+    "pluralName": "legacy-posts",
+    "displayName": "Legacy post"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "short_description": {
+      "type": "text"
+    },
+    "publish_date": {
+      "type": "datetime"
+    },
+    "description": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbarBalloon"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    }
+  }
+}
