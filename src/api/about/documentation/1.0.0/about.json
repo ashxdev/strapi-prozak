@@ -1,5 +1,5 @@
 {
-  "/homepage": {
+  "/about": {
     "get": {
       "responses": {
         "200": {
@@ -7,7 +7,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/HomepageResponse"
+                "$ref": "#/components/schemas/AboutResponse"
               }
             }
           }
@@ -64,7 +64,7 @@
         }
       },
       "tags": [
-        "Homepage"
+        "About"
       ],
       "parameters": [
         {
@@ -169,7 +169,7 @@
           }
         }
       ],
-      "operationId": "get/homepage"
+      "operationId": "get/about"
     },
     "put": {
       "responses": {
@@ -178,7 +178,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/HomepageResponse"
+                "$ref": "#/components/schemas/AboutResponse"
               }
             }
           }
@@ -235,16 +235,16 @@
         }
       },
       "tags": [
-        "Homepage"
+        "About"
       ],
       "parameters": [],
-      "operationId": "put/homepage",
+      "operationId": "put/about",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/HomepageRequest"
+              "$ref": "#/components/schemas/AboutRequest"
             }
           }
         }
@@ -315,10 +315,10 @@
         }
       },
       "tags": [
-        "Homepage"
+        "About"
       ],
       "parameters": [],
-      "operationId": "delete/homepage"
+      "operationId": "delete/about"
     }
   }
 }
