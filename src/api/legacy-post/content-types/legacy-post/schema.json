@@ -4,7 +4,8 @@
   "info": {
     "singularName": "legacy-post",
     "pluralName": "legacy-posts",
-    "displayName": "Legacy post"
+    "displayName": "Legacy post",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,14 +19,15 @@
       "type": "uid"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "short_description": {
       "type": "text"
@@ -39,6 +41,12 @@
         "preset": "toolbarBalloon"
       },
       "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "tags": {
+      "type": "string"
+    },
+    "category_slug": {
+      "type": "string"
     }
   }
 }
