@@ -136,7 +136,26 @@ globalThis.CKEditorConfig = {
                       '|',
                       'toggleTableCaption'
                     ]
-                  }
+                  },
+                  link: {
+          decorators: [
+            {
+              mode: 'manual',
+              label: 'Open in a new tab',
+              attributes: {
+                target: '',
+                rel: '',
+              }
+            },
+            {
+              mode: 'manual',
+              label: 'Downloadable',
+              attributes: {
+                download: 'download'
+              }
+            }
+          ]
+        }
             }
         }
     },
